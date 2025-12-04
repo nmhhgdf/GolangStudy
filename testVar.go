@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+var gA int = 100
+var gB = 200
+// gC := 200
+
 func main() {
 	var a int
 	fmt.Println("a = ", a)
@@ -34,5 +38,20 @@ func main() {
 	g := 3.14
 	fmt.Println("g = ", g)
 	fmt.Printf("type of g = %T\n", g)
+
+	fmt.Println("gA = ", gA)
+	fmt.Println("gB = ", gB)
+	// fmt.Println("gC = ", gC)
+
+	var xx, yy int = 100, 200
+	fmt.Println("xx = ", xx, ", yy = ", yy)
+	var kk, ll = 100, "Aceld"
+	fmt.Println("kk = ", kk, ", ll = ", ll)
+
+	var(
+		vv int = 100
+		jj bool = true
+	)
+	fmt.Println("vv = ", vv, ", jj = ", jj)
 
 }
